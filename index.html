@@ -31,9 +31,14 @@
         </ul>
       </div>
       <div class="card-image">
-        <img srcset="./images/image-header-mobile.jpg 654w"  
+       <!-- <img srcset="./images/image-header-mobile.jpg 654w"  
              sizes="max-width(800px) 370px"
             width="540" height="466" src="./images/image-header-desktop.jpg" alt="card image">
+            -->
+            <picture>
+              <source media="(max-width:800px )" srcset="./images/image-header-mobile.jpg">
+              <img width="540" height="466" src="./images/image-header-desktop.jpg" alt="card image">
+            </picture>
       </div>
     </div>
   </main>
